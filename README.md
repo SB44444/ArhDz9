@@ -46,3 +46,9 @@ b. Создание API:
 В основном классе методы POST GET DELETE для экземпляров класса Book реализует класс BooksHandler,
 имплементируя библиотечный интерфейс HttpHandler, который подгружается через Maven.
 RESTful API с использованием Java HTTP Server API использует порт 8081.
+Команды в терминале:
+Invoke-WebRequest -Uri http://localhost:8081/books -Method POST
+Invoke-WebRequest -Uri http://localhost:8081/books -Method GET
+Invoke-WebRequest -Uri http://localhost:8081/books/1 -Method GET
+Invoke-WebRequest -Uri http://localhost:8081/books/3 -Method PUT
+Invoke-WebRequest -Uri http://localhost:8081/books/2 -Method DELETE 
